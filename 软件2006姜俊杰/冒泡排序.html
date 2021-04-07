@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[132,4,5,0,7,8,89,0,90,45],
+            temp;
+        for(var i=1;i<arr.length-1;i++){
+            for(var n=0;n<arr.length-i;n++){
+                if(arr[n]>arr[n+1]){
+                    temp=arr[n];
+                    arr[n]=arr[n+1];
+                    arr[n+1]=temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

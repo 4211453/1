@@ -1,0 +1,20 @@
+www.github.com  注册
+
+
+1.找到并打开提交的文件夹，右键- git bash here, 打开对话框；
+2.使用前配置（一台电脑，只需要配置一次）
+    	  配置用户名：git config --global user.name 自己的用户名
+	配置邮箱：git config --global user.email  自己的邮箱
+	查看git配置信息：git config --list
+3.提交到本地仓库的步骤：
+	初始化：git init
+	查看文件状态：git status
+	追加文件：git add 文件名字
+	提交仓库：git commit -m 王凯的第一次提交
+	查看提交记录：git log
+4.提交到远程仓库：
+	提交：git push https://github.com/wkall/javascript.git master
+	修改提交的网址： git  remote add  origin（自己起的名字）https://github.com/wkall/javascript.git
+	简化提交的代码： git push -u origin master
+	以后提交：git push
+	
